@@ -1,4 +1,4 @@
-= Build an Neo4j-backed Chatbot using Python
+= An Agentic Neo4j-backed Chatbot using Python
 
 == Running the application
 
