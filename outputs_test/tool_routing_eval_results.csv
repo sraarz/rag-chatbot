@@ -1,0 +1,5 @@
+﻿qid,run_index,category,expected_tool,predicted_tool,correct,question,target_title,tools_called,tool_inputs,runtime_sec,error,final_text,session_id
+C20,1,cypher,Movie information (Graph),Movie information (Graph),True,Which actors starred in Bill & Ted's Excellent Adventure?,Bill & Ted's Excellent Adventure,"[""Movie information (Graph)""]","[""{\""title\"": \""Bill & Ted's Excellent Adventure\""}""]",39.9759,,"- Alex Winter as Bill S. Preston, 
+- Keanu Reeves as Ted Logan, 
+- George Carlin as Rufus, 
+- Terry Camilleri as Napoleon",tool-routing-eval-C20-b0127a49-83e7-467b-964d-976f3982a9c5

@@ -1,0 +1,742 @@
+{
+  "version": "1.0",
+  "seed": 42,
+  "counts": {
+    "vector": 20,
+    "cypher": 20,
+    "general": 10,
+    "total": 50
+  },
+  "questions": [
+    {
+      "qid": "C20",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Which actors starred in Bill & Ted's Excellent Adventure?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Bill & Ted's Excellent Adventure"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Bill & Ted's Excellent Adventure"
+    },
+    {
+      "qid": "C11",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Who directed Cool as Ice?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Cool as Ice"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Cool as Ice"
+    },
+    {
+      "qid": "V05",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Search a movie by plot: A big-city reporter travels to the small town where her mother has been arrested for the murder of an elderly woman that she works for as a maid.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Dolores Claiborne"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Dolores Claiborne"
+    },
+    {
+      "qid": "C07",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "What is the release year of the movie Xanadu?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Xanadu"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Xanadu"
+    },
+    {
+      "qid": "C19",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Who is the director of the movie Penny Serenade?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Penny Serenade"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Penny Serenade"
+    },
+    {
+      "qid": "V13",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Which movie matches these plot elements: clairvoyant, adaptation, allende's, turbulent, america, rancher?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "House of the Spirits, The"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "House of the Spirits, The"
+    },
+    {
+      "qid": "C09",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Who is the director of the movie One Good Cop?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "One Good Cop"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "One Good Cop"
+    },
+    {
+      "qid": "C04",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Who are the main actors in The Count of Monte Cristo?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "The Count of Monte Cristo"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "The Count of Monte Cristo"
+    },
+    {
+      "qid": "C15",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Give me basic information about Night Flier (director, year, genres).",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Night Flier"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Night Flier"
+    },
+    {
+      "qid": "C13",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "What genre or genres does Casino belong to?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Casino"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Casino"
+    },
+    {
+      "qid": "G08",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "What are the criteria for judging whether a movie is well-directed?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "V02",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Find a film based on this plot idea: An international team of climbers ascends Mt.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Everest"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Everest"
+    },
+    {
+      "qid": "V07",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Find a film based on this plot idea: Three trappers protect a British Colonel's daughters in the midst of the French and Indian War.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Last of the Mohicans, The"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Last of the Mohicans, The"
+    },
+    {
+      "qid": "V15",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Search a movie by plot: With the help of an irreverent young sidekick, a bank robber gets his old gang back together to organize a daring new heist.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Thunderbolt and Lightfoot"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Thunderbolt and Lightfoot"
+    },
+    {
+      "qid": "G04",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "What are common storytelling techniques in crime thrillers?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "V14",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Help me find the movie based on this storyline: A retired gay anthropologist revisits the native cultures he studied in his youth.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Keep the River on Your Right: A Modern Cannibal Tale"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Keep the River on Your Right: A Modern Cannibal Tale"
+    },
+    {
+      "qid": "C14",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Who are the main actors in O Brother, Where Art Thou??",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "O Brother, Where Art Thou?"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "O Brother, Where Art Thou?"
+    },
+    {
+      "qid": "C12",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "What year was Rollercoaster released?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Rollercoaster"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Rollercoaster"
+    },
+    {
+      "qid": "G02",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "How can a film build suspense without gore?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "G10",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "What makes dialogue in a film feel natural and believable?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "V06",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "I'm looking for a movie with a story like this: A struggling female soprano finds work playing a male female impersonator, but it complicates her personal life.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Victor/Victoria"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Victor/Victoria"
+    },
+    {
+      "qid": "V08",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Which movie matches these plot elements: restaurant, brothers, business, failing, gambles, italian?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Big Night"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Big Night"
+    },
+    {
+      "qid": "G01",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "What makes a mystery movie satisfying without too much violence?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "G03",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "Explain the difference between noir and neo-noir.",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "C03",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "What genre or genres does Girls, Les belong to?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Girls, Les"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Girls, Les"
+    },
+    {
+      "qid": "G06",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "What makes a good plot twist in cinema?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "V12",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Find a film based on this plot idea: Four teens are in great danger one year after their car hits a stranger whose body they dump in the sea.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "I Know What You Did Last Summer"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "I Know What You Did Last Summer"
+    },
+    {
+      "qid": "G07",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "Why do some movies feel slow but still engaging?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "V19",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Help me find the movie based on this storyline: Frankie and Annette, having grown up and put aside their beach-partying lifestyle, visit their daughter in Southern California and discover there's still some wild times left in them.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Back to the Beach"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Back to the Beach"
+    },
+    {
+      "qid": "C06",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "List the cast of Amityville II: The Possession.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Amityville II: The Possession"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Amityville II: The Possession"
+    },
+    {
+      "qid": "V16",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "I'm looking for a movie with a story like this: Charlie and Itchy return to Earth to find Gabriel's Horn, but along the way meet up with a young boy named David, who ran away from home.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "All Dogs Go to Heaven 2"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "All Dogs Go to Heaven 2"
+    },
+    {
+      "qid": "V20",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Search a movie by plot: In anthology style, a child tells three stories of horror to keep from being eaten by a witch.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Tales from the Darkside: The Movie"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Tales from the Darkside: The Movie"
+    },
+    {
+      "qid": "V04",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Help me find the movie based on this storyline: Hollywood actor Charles Castle is pressured by his studio boss into a criminal cover-up to protect his valuable career.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Big Knife, The"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Big Knife, The"
+    },
+    {
+      "qid": "C01",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Who directed Ransom?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Ransom"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Ransom"
+    },
+    {
+      "qid": "C17",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "What is the release year of the movie Terms of Endearment?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Terms of Endearment"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Terms of Endearment"
+    },
+    {
+      "qid": "G09",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "How can I describe my movie taste to get better recommendations?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "V10",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Search a movie by plot: A biography of artist Frida Kahlo, who channeled the pain of a crippling injury and her tempestuous marriage into her work.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Frida"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Frida"
+    },
+    {
+      "qid": "C10",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Which actors starred in Stepford Wives, The?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Stepford Wives, The"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Stepford Wives, The"
+    },
+    {
+      "qid": "C02",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "What year was Ragtime released?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Ragtime"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Ragtime"
+    },
+    {
+      "qid": "V01",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "I'm looking for a movie with a story like this: Shy seventh-grader Spencer Griffith's life changes when a meteor falls into a local junkyard and he finds a Cybersuit - an exoskeleton with AI from another galaxy.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Star Kid"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Star Kid"
+    },
+    {
+      "qid": "G05",
+      "category": "general",
+      "expected_tool": "General Chat",
+      "question": "How should I choose a movie when I only know my mood?",
+      "user_context": {},
+      "ground_truth": {},
+      "meta": {
+        "seed": 42,
+        "source": "templates"
+      },
+      "target_title": null
+    },
+    {
+      "qid": "C18",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Show the genres for Making Mr. Right.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Making Mr. Right"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Making Mr. Right"
+    },
+    {
+      "qid": "V11",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "I'm looking for a movie with a story like this: An actor limited to stereotypical roles because of his ethnicity, dreams of making it big as a highly respected performer.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Hollywood Shuffle"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Hollywood Shuffle"
+    },
+    {
+      "qid": "V09",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Help me find the movie based on this storyline: Shenzhen businessman, Da Ming, goes home to Beijing when he thinks his father has died.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Shower (Xizao)"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Shower (Xizao)"
+    },
+    {
+      "qid": "V17",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Find a film based on this plot idea: Historically inaccurate chronicle of Squanto's life prior to and including the arrival of the Mayflower in 1620.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Squanto: A Warrior's Tale"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Squanto: A Warrior's Tale"
+    },
+    {
+      "qid": "C16",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "List the cast of Blood Beach.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Blood Beach"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Blood Beach"
+    },
+    {
+      "qid": "V18",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Which movie matches these plot elements: scholarship, attending, pampered, achieve, harvard, receive?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Soul Man"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Soul Man"
+    },
+    {
+      "qid": "C08",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Show the genres for Jeepers Creepers.",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Jeepers Creepers"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Jeepers Creepers"
+    },
+    {
+      "qid": "V03",
+      "category": "vector",
+      "expected_tool": "Movie Plot Search",
+      "question": "Which movie matches these plot elements: meanwhile, narrated, romantic, married, newborn, through?",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Look Who's Talking"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Look Who's Talking"
+    },
+    {
+      "qid": "C05",
+      "category": "cypher",
+      "expected_tool": "Movie information",
+      "question": "Give me basic information about Slaughter Rule, The (director, year, genres).",
+      "user_context": {},
+      "ground_truth": {
+        "target_title": "Slaughter Rule, The"
+      },
+      "meta": {
+        "seed": 42,
+        "source": "allmovieswithplot.csv"
+      },
+      "target_title": "Slaughter Rule, The"
+    }
+  ]
+}

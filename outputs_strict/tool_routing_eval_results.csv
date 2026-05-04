@@ -1,0 +1,434 @@
+﻿qid,run_index,category,expected_tool,predicted_tool,correct,question,target_title,tools_called,tool_inputs,runtime_sec,error,final_text,session_id
+C20,1,cypher,Movie information (Graph),Movie information (Graph),True,Which actors starred in Bill & Ted's Excellent Adventure?,Bill & Ted's Excellent Adventure,"[""Movie information (Graph)""]","[""{\""title\"": \""Bill & Ted's Excellent Adventure\""}""]",44.0408,,"The actors who star in Bill & Ted's Excellent Adventure include Keanu Reeves (Ted Logan), Alex Winter (Bill S. Preston), George Carlin (Rufus), and Terry Camilleri (Napoleon).",tool-routing-eval-C20-290a0c55-4dab-48b3-9759-78f0fe517e4f
+C11,2,cypher,Movie information (Graph),Movie information (Graph),True,Who directed Cool as Ice?,Cool as Ice,"[""Movie information (Graph)"", ""Movie information (Graph)"", ""Movie information (Graph)"", ""Movie information (Graph)"", ""Movie information (Graph)""]","[""{\""title\"": \""Cool as Ice\""}"", ""{\""title\"": \""Cool as Ice\""}"", ""{\""title\"": \""Cool as Ice\""}"", ""{\""title\"": \""Cool as Ice\""}"", ""{\""title\"": \""Cool as Ice\""}""]",129.2036,,The director of Cool as Ice is Michael P. Maxwell.,tool-routing-eval-C11-4b8f839a-db55-4084-9d0f-01f0373c7911
+V05,3,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Search a movie by plot: A big-city reporter travels to the small town where her mother has been arrested for the murder of an elderly woman that she works for as a maid.,Dolores Claiborne,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""A big-city reporter travels to the small town where her mother has been arrested for the murder of an elderly woman that she works for as a maid.\""}""]",39.506,,"The best match for your plot is Dolores Claiborne (1995), directed by Taylor Hackford, starring Kathy Bates. The search results show this title as a likely fit, given the plot element of a maid in a small town allegedly connected to a murder in her employer’s household. Other nearby results from the search include Sisters, Manhattan Murder Mystery, and Mother (Madeo), but Dolores Claiborne is the closest match to your description. If you’d like, I can provide a concise synopsis of Dolores Claiborne or refine the search terms to pinpoint other potential titles.",tool-routing-eval-V05-f91852de-2aab-48e0-80a4-aeb8328c0c51
+C07,4,cypher,Movie information (Graph),Movie information (Graph),True,What is the release year of the movie Xanadu?,Xanadu,"[""Movie information (Graph)""]","[""{\""title\"": \""Xanadu\""}""]",40.5239,,"The release year of Xanadu is 1980. It is a romantic musical fantasy film featuring Olivia Newton-John, Michael Beck, James Sloyan, and Gene Kelly.",tool-routing-eval-C07-05b59735-084f-4348-9a13-affa66955cc7
+C19,5,cypher,Movie information (Graph),General Chat,False,Who is the director of the movie Penny Serenade?,Penny Serenade,[],[],11.2282,,George Stevens,tool-routing-eval-C19-9b8aaf5d-ca1b-436e-9206-8d9d06be6603
+V13,6,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Which movie matches these plot elements: clairvoyant, adaptation, allende's, turbulent, america, rancher?","House of the Spirits, The","[""Movie Plot Search (Vector)""]","[""{\""plot_elements\"": [\""clairvoyant\"", \""adaptation\"", \""Allende's\"", \""turbulent\"", \""america\"", \""rancher\""]}""]",36.0713,,"Missing (1982), directed by Costa-Gavras. It centers on the disappearance of an American journalist in Chile during the 1973 coup, aligning with the Allende era and turbulent times, and involving American characters, which fits the elements ""allende's,"" ""turbulent,"" and ""america."" The elements ""clairvoyant,"" ""adaptation,"" and ""rancher"" do not appear in this film according to the provided plot descriptions. If you’d like, I can share more details about the cast, plot, and historical context.",tool-routing-eval-V13-06d674c4-3c4b-489e-b0a2-a75fd23ef6f2
+C09,7,cypher,Movie information (Graph),_Exception,False,Who is the director of the movie One Good Cop?,One Good Cop,"[""Movie information (Graph)""]","[""{\""title\"": \""One Good Cop\""}""]",40.3733,"CypherSyntaxError('Invalid input \'Here\': expected \'ALTER\', \'ORDER BY\', \'CALL\', \'USING PERIODIC COMMIT\', \'CREATE\', \'LOAD CSV\', \'START DATABASE\', \'STOP DATABASE\', \'DEALLOCATE\', \'DELETE\', \'DENY\', \'DETACH\', \'DROP\', \'DRYRUN\', \'FINISH\', \'FOREACH\', \'GRANT\', \'INSERT\', \'LIMIT\', \'MATCH\', \'MERGE\', \'NODETACH\', \'OFFSET\', \'OPTIONAL\', \'REALLOCATE\', \'REMOVE\', \'RENAME\', \'RETURN\', \'REVOKE\', \'ENABLE SERVER\', \'SET\', \'SHOW\', \'SKIP\', \'TERMINATE\', \'UNWIND\', \'USE\' or \'WITH\' (line 1, column 1 (offset: 0))\n""Here are Cypher queries for the movie titled ""One Good Cop"" using only the provided schema and relationships:""\n ^')",,tool-routing-eval-C09-0c43042e-cfee-4730-a698-2e86879410e1
+C04,8,cypher,Movie information (Graph),_Exception,False,Who are the main actors in The Count of Monte Cristo?,The Count of Monte Cristo,"[""Movie information (Graph)""]","[""{\""title\"": \""The Count of Monte Cristo\"", \""fields\"": [\""main_actors\""]}""]",50.3679,"CypherSyntaxError('Type mismatch: expected Path but was Boolean, Float, Integer, Number, Point, String, Duration, Date, Time, LocalTime, LocalDateTime, DateTime, Vector, List<Boolean>, List<Float>, List<Integer>, List<Number>, List<Point>, List<String>, List<Duration>, List<Date>, List<Time>, List<LocalTime>, List<LocalDateTime> or List<DateTime> (line 6, column 41 (offset: 202))\n""         (substring(m.title, 4, length(m.title) - 4) + \', The\')""\n                                         ^')",,tool-routing-eval-C04-9f01c40f-a029-47de-86d4-313d764e1b6c
+C15,9,cypher,Movie information (Graph),_Exception,False,"Give me basic information about Night Flier (director, year, genres).",Night Flier,"[""Movie information (Graph)""]","[""{\""title\"": \""Night Flier\"", \""type\"": \""movie\"", \""fields\"": [\""director\"",\""year\"",\""genres\"",\""cast\""]}""]",40.0269,"CypherSyntaxError('Aggregation column contains implicit grouping expressions. For example, in \'RETURN n.a, n.a + n.b + count(*)\' the aggregation expression \'n.a + n.b + count(*)\' includes the implicit grouping key \'n.b\'. It may be possible to rewrite the query by extracting these grouping/aggregation expressions into a preceding WITH clause. Illegal expression(s): actorCast (line 12, column 43 (offset: 705))\n""WITH directorName, year, genres, COALESCE(actorCast, []) + COALESCE(collect({name: p.name, role: pr.role}), []) AS cast""\n                                           ^')",,tool-routing-eval-C15-0cb827a9-ec0b-402d-af6a-bdc60b5e36e2
+C13,10,cypher,Movie information (Graph),Movie information (Graph),True,What genre or genres does Casino belong to?,Casino,"[""Movie information (Graph)""]","[""{\""title\"": \""Casino\"", \""year\"": 1995}""]",37.5984,,Casino (1995) is primarily classified as a crime drama film.,tool-routing-eval-C13-7a1ba7c9-2e65-4eb7-a2cd-c3fdcee4057a
+G08,11,general,General Chat,General Chat,True,What are the criteria for judging whether a movie is well-directed?,,"[""General Chat""]","[""{\""Input\"": \""What are the criteria for judging whether a movie is well-directed?\""}""]",38.1139,,"Here are widely used criteria to judge whether a movie is well-directed:
+
+- Vision and coherence: The film has a clear artistic throughline and consistent tonal/thematic choices that feel intentional and purposeful.
+- Narrative clarity and storytelling: The story unfolds in a way that supports the film’s core idea, with clear stakes, goals, and motivations; scenes flow logically and emotionally.
+- Performance direction: Actors deliver specific, grounded performances; blocking communicates relationships and subtext; rhythm and emotional beats feel guided rather than accidental.
+- Visual storytelling and cinematography: Camera work reinforces meaning through shot choice, composition, movement, and lens choices; blocking-to-camera and production design support storytelling.
+- Editing and pace: The editing rhythm fits the film’s needs (tension, humor, contemplative moments); transitions are deliberate and contribute to clarity and mood.
+- Sound design and music: Sound effects, dialogue balance, and score are integrated to enhance emotion and realism without overpowering scenes.
+- Production design and world-building: Sets, costumes, props establish a believable, purposeful world that supports character, mood, and plot.
+- tonal control and consistency: The film maintains a stable or intentionally evolving tone; shifts are purposeful and well-handled.
+- Thematic integration: Themes emerge naturally from characters, plot, and visuals; subtext is present without being preachy.
+- Craft and risk-taking: The director’s bold, specific choices leave a personal stamp while maintaining disciplined execution.
+- Audience and genre alignment: Directing serves the intended audience experience and genre expectations, while offering a fresh perspective when appropriate.
+
+How to apply these criteria (practical tips):
+- Focus on a couple of aspects at a time (e.g., camera work and pacing) to assess how well they serve the film’s aims.
+- Check if each scene has a purpose beyond itself and whether the directing choices reinforce that purpose.
+- Compare to other works by the same director or within the same genre to gauge distinctiveness and effectiveness.
+- Remember: directing is one part of a collaborative process; even a well-directed film relies on strong writing, acting, editing, and production design.",tool-routing-eval-G08-f7debb3b-2b00-4dd2-ad8f-28346f8ccd65
+V02,12,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Find a film based on this plot idea: An international team of climbers ascends Mt.,Everest,"[""Movie Plot Search (Vector)""]","[""{\""plot_idea\"": \""An international team of climbers ascends Mt.\""}""]",41.3337,,"- Everest (2015) — Director: Baltasar Kormákur; Cast: Jason Clarke, Martin Henderson, Thomas M Wright, Ang Phula Sherpa, Ang Dorjee. Plot: A climbing expedition on Mt. Everest is devastated by a severe snow storm.
+- Everest (1996) — Directors: Stephen Judson, Greg MacGillivray, David Breashears; Cast: Ed Viesturs (Summit Team Leader, USA), Dorje Sherpa, Lhakpa Dorji, Liam Neeson (Narrator). Plot: An international team of climbers ascends Mt. Everest in spring 1996, detailing their preparations, ascent, and return.
+- Vertical Limit (2000) — Director: Martin Campbell; Cast: Robin Tunney, Chris O'Donnell, Augie Davis, Stuart Wilson. Plot: A climber must rescue his sister on top of K2.",tool-routing-eval-V02-9028e902-44cd-42cc-b2be-3d8333793c65
+V07,13,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Find a film based on this plot idea: Three trappers protect a British Colonel's daughters in the midst of the French and Indian War.,"Last of the Mohicans, The","[""Movie Plot Search (Vector)""]","[""{\""plot_summary\"": \""Three trappers protect a British Colonel's daughters in the midst of the French and Indian War.\""}""]",31.863,,"The Last of the Mohicans. Based on James Fenimore Cooper’s novel; adapted into a 1992 film. It follows Hawkeye and his Mohican companions protecting Colonel Munro’s daughters, Cora and Alice, during the French and Indian War. Directed by Michael Mann. Principal cast includes Daniel Day-Lewis as Hawkeye/Nathaniel Poe; Madeleine Stowe as Cora Munro; Eric Schweig as Uncas; Russell Means as Chingachgook.",tool-routing-eval-V07-b8a53c3f-0a5e-4ad3-b6a2-a64be2270539
+V15,14,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Search a movie by plot: With the help of an irreverent young sidekick, a bank robber gets his old gang back together to organize a daring new heist.",Thunderbolt and Lightfoot,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""With the help of an irreverent young sidekick, a bank robber gets his old gang back together to organize a daring new heist.\""}""]",37.6118,,"Ocean's Eleven (2001). In that film, Danny Ocean reunites his old crew with the help of a witty, younger sidekick to pull off a daring casino heist in Las Vegas.",tool-routing-eval-V15-a92d2b80-91ef-4535-aecf-a2f9a1b17b14
+G04,15,general,General Chat,General Chat,True,What are common storytelling techniques in crime thrillers?,,"[""General Chat""]","[""{\""input\"": \""What are common storytelling techniques in crime thrillers?\""}""]",41.1841,,"- Non-linear structure and multiple timelines: flashbacks, parallel timelines, or shifting points of view to reveal clues out of order, build mystery, and create tension as the audience pieces things together.
+- Unreliable or biased narration: a detective, suspect, or survivor whose memory or motives aren’t fully trustworthy, prompting the viewer to question what’s real until the truth emerges.
+- Puzzle and clue-based plotting: the story unfolds like a puzzle with clues, red herrings, and misdirection. the audience tries to solve the crime alongside the protagonist, often leading to a revelatory “aha” moment.
+- Red herrings and misdirection: deliberate false leads that keep viewers guessing and prevent easy answers, heightening suspense and surprise at the reveal.
+- Investigation-driven structure (procedural realism): a focus on the steps of solving a crime—interviews, forensics, lab work, surveillance, data analysis, and the obstacles investigators face (bureaucracy, politics, resources).
+- Character-driven conflict and moral ambiguity: protagonists and suspects with flawed motives or murky ethics (anti-heroes, corrupt systems, personal vendettas) that complicate who’s right or wrong.
+- Mood, tone, and atmosphere: noir-inspired visuals and sound—rain-soaked streets, stark lighting, smoky rooms, tense silences—that create a sense of dread and inevitability.
+- Stakes and pacing (ticking clock): a time pressure element (imminent murder, imminent reveal, or a race against a deadline) that escalates tension and accelerates the narrative pacing.
+- Twists and reversals: unexpected reveals about identity, motive, or memory that overturn the audience’s assumptions, often delivered in a climactic confrontation.
+- Theme of truth vs. illusion: exploring what is real, what is manufactured by media or power structures, and what justice means in a flawed world.
+- Forensic and technological realism: procedural details (forensic science, digital surveillance, data leaks) that lend authenticity and shape the investigation’s progress.
+- Voice and dialogue-driven interrogation scenes: tense conversations, confessions, or cross-examinations that expose lies and reveal character, motives, and secrets.
+- Visual storytelling and symbolism: deliberate clues shown on screen through objects, framing, or recurring motifs that foreshadow or echo revelations.
+- Social commentary and subgenre blending: crime thrillers often critique institutions (police, government, media) and may blend elements of noir, police procedural, psychological thriller, or legal drama.
+- Ending approach (definitive vs. ambiguous): some thrillers aim for a clear resolution, while others leave questions open to provoke discussion about consequences and ethics.
+
+If you’re studying or crafting a crime thriller, mixing these elements thoughtfully—strong puzzle logic, credible investigation, compelling moral complexity, and a distinctive mood—tends to yield a gripping experience.",tool-routing-eval-G04-1c245fc5-84d4-49b2-b1f8-1de5aba6c502
+V14,16,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Help me find the movie based on this storyline: A retired gay anthropologist revisits the native cultures he studied in his youth.,Keep the River on Your Right: A Modern Cannibal Tale,"[""Movie Plot Search (Vector)""]","[""{\""plot_description\"": \""A retired gay anthropologist revisits the native cultures he studied in his youth.\""}""]",35.0953,,"The movie that matches your description is Keep the River on Your Right: A Modern Cannibal Tale. It’s a documentary directed by David Shapiro and Laurie Gwen Shapiro about Tobias Schneebaum, a gay anthropologist who revisits the native cultures he studied earlier in life. In the provided records, the film is listed as Keep the River on Your Right: A Modern Cannibal Tale (TMDB ID 65075), with Tobias Schneebaum among the central figures and a plot line described as: ""A retired gay anthropologist revisits the native cultures he studied in his youth."" If you’d like, I can fetch more details (year, runtime, full cast) from the film’s entry.",tool-routing-eval-V14-43aa9dba-7336-42e2-8d07-0a159c6e9f1c
+C14,17,cypher,Movie information (Graph),Movie information (Graph),True,"Who are the main actors in O Brother, Where Art Thou??","O Brother, Where Art Thou?","[""Movie information (Graph)""]","[""{\""title\"": \""O Brother, Where Art Thou?\""}""]",38.0042,,"The main actors in O Brother, Where Art Thou? are George Clooney (as Ulysses Everett McGill), John Goodman (as Daniel ""Big Dan"" Teague), Tim Blake Nelson (as Delmar O'Donnell), and John Turturro (as Pete Hogwallop).",tool-routing-eval-C14-4fad8ffd-8c5b-4804-86b9-088caf4cfb39
+C12,18,cypher,Movie information (Graph),_Exception,False,What year was Rollercoaster released?,Rollercoaster,"[""Movie information (Graph)""]","[""{\""title\"": \""Rollercoaster\""}""]",30.8308,"CypherSyntaxError('Invalid input \'query\': expected \'ALTER\', \'ORDER BY\', \'CALL\', \'USING PERIODIC COMMIT\', \'CREATE\', \'LOAD CSV\', \'START DATABASE\', \'STOP DATABASE\', \'DEALLOCATE\', \'DELETE\', \'DENY\', \'DETACH\', \'DROP\', \'DRYRUN\', \'FINISH\', \'FOREACH\', \'GRANT\', \'INSERT\', \'LIMIT\', \'MATCH\', \'MERGE\', \'NODETACH\', \'OFFSET\', \'OPTIONAL\', \'REALLOCATE\', \'REMOVE\', \'RENAME\', \'RETURN\', \'REVOKE\', \'ENABLE SERVER\', \'SET\', \'SHOW\', \'SKIP\', \'TERMINATE\', \'UNWIND\', \'USE\' or \'WITH\' (line 1, column 8 (offset: 7))\n""Cypher query:""\n        ^')",,tool-routing-eval-C12-3831896d-2f53-42e1-851d-47bbf2a944d5
+G02,19,general,General Chat,General Chat,True,How can a film build suspense without gore?,,"[""General Chat""]","[""{\""input\"":\""How can a film build suspense without gore?\""}""]",53.9893,,"- Focus on character stakes
+  - Make the protagonist’s goal clear and personally meaningful.
+  - The audience should care about the character’s outcome; stakes feel real when the character’s vulnerabilities are exposed.
+
+- Make the threat unseen
+  - Use off-screen danger, shadows, or hints rather than explicit displays.
+  - Let the audience fill in the danger with their imagination.
+
+- Withhold information
+  - Let viewers know more than the characters in small, controlled doses.
+  - Withhold a key detail to raise anxiety and curiosity.
+
+- Use a ticking clock and escalating proximity
+  - Introduce a definite deadline or creeping encroachment that tightens the pace.
+  - Each beat should bring the danger closer to the character.
+
+- Incorporate false relief and reversals
+  - A pause or brief sense of safety followed by a new twist that deepens the threat.
+
+Craft techniques you can apply
+- Story structure
+  - Start in a vulnerable or ordinary world that quickly becomes unsettled.
+  - Layer near-misses and small, credible setbacks.
+  - End acts with a stronger threat or a twist that raises stakes.
+
+- Cinematography and framing
+  - Use controlled, off-screen space to imply danger.
+  - Telephoto/lens choices can compress space and heighten claustrophobia.
+  - Isolate the character with tight close-ups; juxtapose calm wide shots with something ominous outside the frame.
+
+- Pacing and editing
+  - Slow-burn pacing: linger on moments, lengthen takes, or use measured edits.
+  - Cut on action or reaction to amplify anticipation.
+  - Alternate between the character’s perspective and ominous, unrelated backdrops to build unease.
+
+- Sound design and score
+  - Silence can be more intimidating than noise.
+  - Subtle, recurring motifs or tactile sounds (ticks, creaks, distant footsteps) cue danger without showing it.
+  - Use diegetic sounds to make threats feel tangible.
+
+- Production design and environment
+  - Normalize an unfamiliar or eerie setting to heighten impact when something unusual occurs.
+  - Lighting and shadows hint at danger without revealing it.
+  - Small, realistic details (faulty phones, doors that stick) raise stakes believably.
+
+- Narrative devices
+  - Unreliable or confined perspectives increase mystery.
+  - Red herrings and deliberate misdirection keep the audience guessing.
+  - A ticking clock or escalating consequences if the protagonist fails.
+
+- Character mechanics
+  - Give the protagonist a personal flaw or limit the threat can exploit.
+  - Pair the protagonist with a foil or ally who provides conflicting information, amplifying doubt and tension.
+
+Film references to study (without gore emphasis)
+- Rear Window (1954)
+- The Birds (1963)
+- Jaws (1975)
+- No Country for Old Men (2007)
+- The Others (2001)
+- The Sixth Sense (1999)
+- The Ring (2002)
+- The Witch (2015)
+
+Practical exercises
+- Write a suspense scene without showing the threat: focus on objective, obstacles, sensory cues, and a twist at the end.
+- Create a suspense beat sheet:
+  - Beat 1: Normal world and inciting incident.
+  - Beat 2: First close call; audience breathes a sigh of relief.
+  - Beat 3: Escalation; new information or a false sense of safety.
+  - Beat 4: The real threat appears or is implied; stakes rise.
+  - Beat 5: Cliffhanger or closing twist forcing action.
+- Build a micro-scene with an off-screen threat:
+  - Start in a familiar space; reveal danger only through sound, a single object, or a shadow.
+- Quick blueprint for a suspense sequence (no gore)
+  1) Setup: Character notices something off.
+  2) Tension-building: Small, non-visual clues accumulate.
+  3) Near-miss: They almost encounter the threat; cut at the moment of contact.
+  4) False relief: They think it’s over, but a new cue proves otherwise.
+  5) Cliffhanger ending: A choice under pressure with the threat just out of frame.
+
+If you want, tell me your genre, setup, and what you want the audience to feel (unease, dread, dread with relief, etc.). I can tailor a suspense plan and scene-by-scene outline that keeps the tension high without gore.",tool-routing-eval-G02-3f16e966-4400-4f6a-8cac-65223dd8b2eb
+G10,20,general,General Chat,General Chat,True,What makes dialogue in a film feel natural and believable?,,[],[],23.0527,,"Natural-sounding dialogue in a film comes from letting characters speak as humans would, while still serving the story and the moment. Here are key elements and practical tips:
+
+- Subtext over exposition: People rarely say exactly what they want. Let lines hint at intentions, with the real motive buried underneath. The audience understands through what’s unsaid as much as what’s said.
+- Distinctive voices: Give each character a unique cadence, vocabulary, and level of formality. Consider their background, education, age, region, and personality. A lawyer talks differently from a janitor or a teenager.
+- Realistic rhythm and pacing: People interrupt, trail off, use filler, or switch topics mid-sentence. Use short, terse responses in tense moments and longer, more reflective lines when characters are introspective. Read dialogue aloud to feel the natural flow.
+- Economy and purpose: Every line should reveal something about character, advance the plot, or heighten conflict. Cut chatter that doesn’t do one of these.
+- Subtlety and restraint: Avoid explicit explanations. Let the audience infer backstory through what a character chooses not to say or how they react.
+- Beats, not bullets: Use pauses and micro-beats between lines to mimic real conversation. Stage directions or editing can show these beats without turning dialogue into a lecture.
+- Context and specificity: Time period, setting, and situation shape language. Street slang, a formal monologue, or a medical briefing all have their own natural textures.
+- Nonverbal resonance: Dialogues’ impact is reinforced by action, facial expressions, body language, and silence. A well-timed silence can carry more weight than words.
+- Conflict and stakes: Even everyday chats should reveal what characters want and what stands in their way. Combatting competing goals makes dialogue feel alive.
+- Humor that feels earned: Jokes and wit should arise from character and situation, not from a generic punchline. Miscommunication and irony often feel more authentic than one-liners.
+- Exposition through texture, not explanation: Convey world-building and backstory through specific details, interruptions, and character memories instead of long expository speeches.
+- Revision process: 
+  - Read aloud and record the scene to catch awkward rhythms.
+  - Check each line for purpose and subtext.
+  - Ensure each character’s voice stays consistent across scenes.
+  - Test with actors to see if lines feel natural in performance, not just on the page.
+- Sensitivity and realism: Strive for authentic representation, avoiding stereotypes while honoring genuine vernacular when appropriate.
+
+If you want, tell me about a setting, genre, or two characters, and I can sketch sample dialogue that demonstrates natural, believable exchanges tailored to that context.",tool-routing-eval-G10-9531afdf-9252-4f0f-9ecb-c8f386a891d7
+V06,21,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"I'm looking for a movie with a story like this: A struggling female soprano finds work playing a male female impersonator, but it complicates her personal life.",Victor/Victoria,"[""Movie Plot Search (Vector)""]","[""{\""plot_description\"": \""A struggling female soprano finds work playing a male female impersonator, but it complicates her personal life.\""}""]",38.1377,,"Victor/Victoria is the film that matches your plot description. It stars Julie Andrews as Victoria Grant / Count Victor Grazinski, Lesley Ann Warren as Norma Cassady, Robert Preston as Carroll ""Toddy"" Todd, and James Garner as King Marchand, and it was directed by Blake Edwards. The plot involves a struggling female soprano who works as a male female impersonator, which complicates her personal life. The context list identifies this title as matching your synopsis.",tool-routing-eval-V06-3ad40b89-2551-4191-97a4-7f5343c8e34b
+V08,22,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Which movie matches these plot elements: restaurant, brothers, business, failing, gambles, italian?",Big Night,"[""Movie Plot Search (Vector)""]","[""{\""plot_elements\"": [\""restaurant\"", \""brothers\"", \""business\"", \""failing\"", \""gambling\"", \""Italian\""]}""]",24.3266,,Big Night (1996). Directed by Stanley Tucci and Campbell Scott. An Italian-American drama/comedy about two brothers who run a failing Italian restaurant and gamble on one special night to save the business. Stars Tony Shalhoub and Stanley Tucci.,tool-routing-eval-V08-e0e53b0c-c6b2-44cf-9378-d82e802d17f1
+G01,23,general,General Chat,General Chat,True,What makes a mystery movie satisfying without too much violence?,,[],[],15.3772,,"- Center the mystery on a solid puzzle with clear, plantable clues. The premise should be solvable by attentive viewers, not by random twists.
+- Emphasize fair play: let the audience have access to the same information as the detective, with clues foreshadowed and explained in the reveal.
+- Build a compelling detective or protagonist whose intellect, flaws, and choices drive the story. Strong character work keeps the mystery engaging beyond violence.
+- Use misdirection wisely. Red herrings should feel plausible and thematically connected, not just misleading for shock value.
+- Focus on pace and structure: a strong setup, escalating discoveries, and a thoughtfully timed reveal that recontextualizes earlier moments.
+- Make clues tactile and cinematic: visual motifs, sound cues, and symbolic details that Reward careful watching and offer rewatch value.
+- Prioritize stakes that matter emotionally or socially rather than relying on",tool-routing-eval-G01-61394daf-53ef-4349-b617-f1e81f5d5b3a
+G03,24,general,General Chat,General Chat,True,Explain the difference between noir and neo-noir.,,"[""General Chat""]","[""{\""input\"": \""Explain the difference between film noir and neo-noir.\""}""]",42.445,,"Classic film noir refers to a style/movement in American crime dramas from the 1940s to early 1950s, typically shot in black-and-white with high-contrast lighting and urban nightscapes. It features cynical, fatalistic, morally ambiguous atmospheres, hardboiled male protagonists or antiheroes, dangerous femme fatales, voiceover narration, and often linear or lightly nonlinear narratives with grim, unresolved endings. Key examples: Double Indemnity (1944), Out of the Past (1947), The Maltese Falcon (1941), The Big Sleep (1946).
+
+Neo-noir is a revival that began in the late 1960s and continues today, often in color, with contemporary cinematography and locations. It keeps core concerns—crime, desire, corruption, moral ambiguity—but adds self-awareness and critique of institutions, technology, or modern society. Antiheroes persist, but gender dynamics are more varied; narratives can be non-linear or self-referential. Notable examples: Chinatown (1974), Blade Runner (1982), L.A. Confidential (1997), Memento (2000), Mulholland Dr. (2001), Drive (2011).
+
+Key differences at a glance: era/context; look; tone; themes; narrative tricks. Quick take: If you see a film with hardboiled cynicism, shadowy lighting, and a fatalistic mood set in 1940s-50s America, you’re in classic film noir territory. If you see a crime story that uses neon, color, modern settings, complex structure, and a more ironic or critical spin on corruption, you’re looking at neo-noir. If you’d like, I can suggest a short watching list from each category.",tool-routing-eval-G03-582d8c0b-1420-47a3-868f-9a1870acf3e8
+C03,25,cypher,Movie information (Graph),Movie information (Graph),True,"What genre or genres does Girls, Les belong to?","Girls, Les","[""Movie information (Graph)""]","[""{\""title\"": \""Girls, Les\"", \""fields\"": [\""genres\"", \""director\"", \""year\"", \""cast\""]}""]",75.2438,,"The film ""Girls, Les"" is categorized as a Musical. It is a 1957 film directed by George Cukor.",tool-routing-eval-C03-b6e70ebb-4be8-4832-8ca3-7551cdbfb239
+G06,26,general,General Chat,General Chat,True,What makes a good plot twist in cinema?,,"[""General Chat""]","[""{\""query\"":\""What makes a good plot twist in cinema? Provide principles, common structures (misdirection, reveal, reversal), pacing, character consistency, potential pitfalls, and examples from well-known films across genres.\""}""]",57.2983,,"Here’s a comprehensive synthesis of what makes a good plot twist in cinema, drawing on principles, structures, craft habits, common pitfalls, and genre examples.
+
+Core principles of a good plot twist
+- Earned and grounded in character and world rules
+  - The twist should arise from what the story has already established about its characters and setting, not from random miracles.
+- Signposted, not rushed
+  - Clues are planted along the way so the twist can be explained and reinterpreted in hindsight.
+- Thematic resonance
+  - The twist deepens the film’s central themes (power, identity, truth, memory, morality) beyond mere surprise.
+- Emotional or psychological payoff
+  - It should alter how we feel about characters and consequences, not just shock us.
+- Clarity and plausibility
+  - Even if surprising, the twist must feel right given the story’s logic, stakes, and constraints.
+- Rewatchability
+  - A good twist invites rewatching with new insights from foreshadowing and prior choices.
+- Tone consistency
+  - The twist should fit the film’s mood and genre; abrupt tonal shifts are earned only if baked into the design.
+
+Common twist structures (how twists are built)
+- Misdirection
+  - The audience is guided toward one inference, then flipped.
+  - Examples often cited: a mastermind revealed later, or a layer of motive that changes interpretation.
+- Reveal (uncovering a hidden truth)
+  - A new factual truth about a character or the world reframes prior events.
+  - Examples often cited: a protagonist’s secret, a hidden identity, or a concealed reality.
+- Reversal
+  - The audience’s or protagonist’s understanding flips, changing the meaning of what came before.
+  - Examples: a narrator’s reliability undermined; motives and loyalties reversed.
+- Doppelgänger/identity split
+  - An alter ego, twin, or hidden self becomes central to the twist.
+  - Examples: split personalities, mirrored selves, or swapped destinies.
+- Memory/time twist
+  - The reliability of memory or the chronology itself is revealed to be different from what was assumed.
+  - Examples: non-linear recollection, manipulated diaries, or a timeline reframe.
+
+Pacing and structure tips for effective twists
+- Placement
+  - Don’t bury the twist so late that the film stalls; mid-to-late reveals (roughly 60–80% in) tend to land strongly, followed by consequence.
+- Foreshadowing without giving it away
+  - Plant subtle motifs, dialogue hints, or character quirks that reframe with the twist in mind.
+- Build to consequence
+  - The twist should alter what happens next and raise new questions or stakes.
+- Keep the twist believable
+  - Avoid leaps in logic that strain the audience’s willingness to suspend disbelief unless the world’s rules already support it.
+- Balance information and suspense
+  - After a reveal, provide enough explanation to feel earned, but avoid an exposition dump that drains momentum.
+
+Character consistency and logical believability
+- Align the twist with character psychology
+  - The twist should reflect what a character would do given their motivations, knowledge, and development.
+- World rules first
+  - If the twist involves supernatural, sci-fi, or fantastical elements, establish clear rules early enough to suspend disbelief.
+- Avoid “gotcha” ethics
+  - Twists should feel morally coherent with the characters’ established ethics, or at least reveal a coherent internal logic.
+
+Common pitfalls to avoid
+- It’s all a dream/alternate reality with no lasting impact
+  - If the twist negates the film’s reality without meaningful consequences, it can feel like cheating.
+- Overcomplication or arbitrary logic
+  - Complex twists require careful setup; excessive retconning can erode trust.
+- Retcon/rewriting the entire story
+  - Post-hoc changes that redefine key facts can undercut narrative integrity.
+- Ignoring consequences
+  - Twists should affect characters and outcomes, not just provide a new fact.
+- Tone misalignment
+  - A twist that clashes with the film’s genre or emotional core can leave the audience unsatisfied.
+
+Representative twists across genres (brief notes)
+- Thriller / mystery
+  - The Usual Suspects (misdirection; a carefully built reveal)
+  - Memento (memory-based reversal; non-linear narrative reframes everything)
+  - Chinatown (systemic corruption and motive with grim consequences)
+  - Shutter Island (identity-related revelation and unreliable memory)
+- Psychological horror
+  - The Sixth Sense (unreliable narrator reframes prior events)
+  - The Others (reversal built on atmosphere and confinement)
+  - Psycho (dual persona explains the killings)
+- Drama / romance
+  - Atonement (perceived forgiveness reframed as a lie; moral ramifications)
+  - Gone Girl (narrative manipulation and persona reversal)
+- Science fiction / fantasy
+  - The Matrix (reality-as-program twist; philosophical implications)
+  - The Prestige (deception and twin lives reframing motives)
+  - Inception (ambiguous ending recontextualizes reality and desire)
+- Noir / crime
+  - Fight Club (narrator’s identity collapse; existential critique)
+  - Oldboy (revenge recontextualized by a brutal moral reversal)
+- Social / political subtext
+  - Parasite (tonal/genre twist reframing class conflict)
+  
+Crafting a twist: quick practical checklist
+- Do you have a strong throughline for character and theme?
+- Are clues hidden in plain sight, with a few deliberate misdirections?
+- Does the twist change the consequences for characters and the world?
+- Is the twist emotionally or philosophically meaningful, not just surprising?
+- Can the film be rewatched with new insight without feeling retroactive or dishonest?
+
+Want a tailored twist guide?
+- I can tailor a spoiler-free or spoiler-filled twist bible for a specific genre, mood, or screenplay idea you’re developing, or analyze a particular film’s twist in detail. If you tell me the genre or a film you’re curious about, I’ll adapt these principles with concrete notes.",tool-routing-eval-G06-130732e6-52b7-4ae9-955b-7fe33bb8b47a
+V12,27,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Find a film based on this plot idea: Four teens are in great danger one year after their car hits a stranger whose body they dump in the sea.,I Know What You Did Last Summer,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""Four teens are in great danger one year after their car hits a stranger whose body they dump in the sea.\""}""]",33.3545,,"I Know What You Did Last Summer (1997). Directed by Jim Gillespie. Stars Freddie Prinze Jr. as Ray Bronson, Sarah Michelle Gellar as Helen Shivers, Ryan Phillippe as Barry William Cox, Jennifer Love Hewitt as Julie James. Plot summary (from the search): four teens in great danger one year after their car hits a stranger whose body they dump in the sea. TMDB page: https://www.themoviedb.org/movie/3597",tool-routing-eval-V12-3f8d2410-33ee-4ae4-8d9c-9114df2e6dfb
+G07,28,general,General Chat,General Chat,True,Why do some movies feel slow but still engaging?,,[],[],14.707,,"There are several reasons a movie can feel slow yet still be engaging, and they often come down to pacing, mood, and how the film earns your attention. Here are the key factors:
+
+- Pacing as a deliberate choice: Slow pacing isn’t about filler; it’s about giving you time to absorb mood, setting, and character psychology. When a film takes its time, you’re invited to be fully present rather than just moving from beat to beat.
+
+- Focus on character and theme: Slow films often foreground inner life, moral dilemmas, or existential questions. Even without constant action, viewers stay invested by wanting to understand characters’ motivations, conflicts, and growth.
+
+- Visual storytelling and atmosphere: Rich cinematography, thoughtful framing, color schemes, and production design draw you into the world. If a film rewards close attention to visuals, you’ll stay engaged even during quieter moments.
+
+- Sound design and music: Silence, ambient sound, and carefully placed musical cues can heighten anticipation and emotion. The auditory landscape can make scenes feel purposeful and emotionally charged.
+
+- Long takes and minimal edits: Extended shots or restrained editing can create continuity and immersion. They let you experience time as it unfolds and notice details you might miss in a fast-cut sequence.
+
+- Narrative structure and ambiguity: Some slow films use non-linear storytelling, open endings, or layered subtext. This invites interpretation and discussion, keeping viewers mentally engaged after the screen goes dark.
+
+- builds anticipation and payoff: Slow burn films often set up small, inconsequential-seeming moments that pay off later, or create a sense of inevitability. The payoff is emotional, thematic, or atmospheric rather than action-driven.
+
+- Genre and audience expectations: Slow, contemplative dramas, art-house films, or certain thrillers purposefully emphasize mood, character, or ideas over conventional cliffhangers. Viewers who appreciate those modes often find them deeply engaging.
+
+- Personal pacing and viewer state: Your own mood, attention span, and willingness to reflect can affect how slow feels. Some viewers lean into patience and discovery, while others prefer more rapid progression.
+
+Tips to recognize and enjoy slow-but-engaging cinema:
+- Pay attention to details: small gestures, props, or framings can carry theme and character insight.
+- Notice the rhythm: track how film length, editing, and sound modulate your emotional response.
+- Think about why a scene exists: consider what it reveals about characters, setting, or message rather than what it delivers in action.
+- Embrace ambiguity: allow space for interpretation instead of seeking explicit answers.
+
+If you’d like, tell me a film you’ve found slow but engaging, and I can break down how these elements show up in that movie.",tool-routing-eval-G07-1e9d0b9e-6193-45b4-b9f0-b766ef4618fd
+V19,29,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Help me find the movie based on this storyline: Frankie and Annette, having grown up and put aside their beach-partying lifestyle, visit their daughter in Southern California and discover there's still some wild times left in them.",Back to the Beach,"[""Movie Plot Search (Vector)""]","[""{\""plot_description\"": \""Frankie and Annette, having grown up and put aside their beach-partying lifestyle, visit their daughter in Southern California and discover there's still some wild times left in them.\""}""]",41.5661,,"Back to the Beach (1987) is the movie that fits your description. Directed by Lyndall Hobbs, it stars Frankie Avalon and Annette Funicello playing themselves as they visit their daughter in Southern California and discover there are still wild times left in them. The film features a supporting cast including Lori Loughlin and Tommy Hinkley. It’s a nostalgic comedy that continues the Frankie and Annette beach party vibe in a family-friendly setting.",tool-routing-eval-V19-3186bc9c-b99b-45ac-978d-12d4125e6304
+C06,30,cypher,Movie information (Graph),Movie information (Graph),True,List the cast of Amityville II: The Possession.,Amityville II: The Possession,"[""Movie information (Graph)""]","[""{\""title\"": \""Amityville II: The Possession\"", \""fields\"": [\""cast\""]}""]",41.2111,,"- James Olson as Father Adamsky
+- Jack Magner as Sonny Montelli
+- Rutanya Alda as Delores Montelli
+- Burt Young as Anthony Montelli",tool-routing-eval-C06-150b6362-def1-42ff-bad2-93293621cecb
+V16,31,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"I'm looking for a movie with a story like this: Charlie and Itchy return to Earth to find Gabriel's Horn, but along the way meet up with a young boy named David, who ran away from home.",All Dogs Go to Heaven 2,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""Charlie and Itchy return to Earth to find Gabriel's Horn, but along the way meet up with a young boy named David, who ran away from home.\""}""]",33.0471,,"The movie is All Dogs Go to Heaven 2. Your described plot—Charlie and Itchy returning to Earth to find Gabriel's Horn while meeting a runaway boy named David—matches this film. Key cast and crew from the plot match include:
+- Charlie Barkin voiced by Charlie Sheen
+- Annabelle (the Dog Goddess) voiced by Bebe Neuwirth
+- Itchy (Chihuahua) voiced by Hamilton Camp
+- Carface voiced by Ernest Borgnine
+- Directors: Paul Sabella and Larry Leker
+
+If you want, I can pull up more details like exact release year, runtime, or where to stream.",tool-routing-eval-V16-eb23a604-968f-4e4c-989f-4118a65ea3a8
+V20,32,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Search a movie by plot: In anthology style, a child tells three stories of horror to keep from being eaten by a witch.",Tales from the Darkside: The Movie,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""In an anthology-style horror film, a child tells three stories to keep from being eaten by a witch.\""}""]",43.9897,,"Tales from the Darkside: The Movie (1990). Directed by John Harrison. It’s an anthology horror film based on the Tales from the Darkside TV series. The wraparound frame involves a child telling three horror stories to avoid being eaten by a witch. Notable cast includes Debbie Harry (Betty) and Christian Slater, among others.",tool-routing-eval-V20-686ad042-e1d0-4c85-9386-aaf06d000660
+V04,33,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Help me find the movie based on this storyline: Hollywood actor Charles Castle is pressured by his studio boss into a criminal cover-up to protect his valuable career.,"Big Knife, The","[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""Hollywood actor Charles Castle is pressured by his studio boss into a criminal cover-up to protect his valuable career.\""}""]",25.7341,,"The Big Knife (1955) — directed by Robert Aldrich. Starring Jack Palance as Charles Castle, with Jean Hagen, Wendell Corey, Ida Lupino. Plot: A Hollywood actor is pressured by his studio boss into a criminal cover-up to protect his career.",tool-routing-eval-V04-641f74b4-43ba-481e-acda-dbe8a4a9928d
+C01,34,cypher,Movie information (Graph),General Chat,False,Who directed Ransom?,Ransom,[],[],7.4897,,Ron Howard directed the 1996 film Ransom.,tool-routing-eval-C01-ed227b11-1424-40c5-bf1b-7af9de8f5aec
+C17,35,cypher,Movie information (Graph),_Exception,False,What is the release year of the movie Terms of Endearment?,Terms of Endearment,"[""Movie information (Graph)"", ""Movie information (Graph)""]","[""{\""title\"": \""Terms of Endearment\""}"", ""{\""title\"": \""Terms of Endearment\"", \""return_only_outputs\"": true}""]",45.4627,"CypherSyntaxError('RETURN can only be used at the end of the query. (line 2, column 1 (offset: 72))\n""RETURN p.name, r.role""\n ^')",,tool-routing-eval-C17-4e64743c-8630-4601-b4a5-1b9ccae07d31
+G09,36,general,General Chat,General Chat,True,How can I describe my movie taste to get better recommendations?,,[],[],25.4556,,"Great question. Here’s a practical way to articulate your movie taste to get better recommendations:
+
+- Create a concise taste profile
+  - Core adjectives: pick 6–10 words that describe how you want movies to feel (e.g., intimate, moody, atmospheric, witty, morally complex, visually lush, slow-burn, brutal, hopeful, biting).
+  - Preferred genres and subgenres: list your top 3–5, plus any you want to avoid.
+  - Tone and pacing: note if you prefer slow-paced character studies, fast-paced thrillers, dark comedies, or elegiac dramas.
+  - Visual and audio style: note if you like naturalistic cinematography, neon-noir aesthetics, period pieces, lush scores, or minimalist sound design.
+  - Language and format: specify if you’re open to subtitled foreign films, animated features, or only English-language films.
+
+- Define core elements you care about
+  - Character focus vs. plot-driven: do you want deeply developed characters or high-concept premises?
+  - Narrative structure: linear vs. non-linear, twists, ambiguity, open endings.
+  - Themes you’re drawn to: identity, memory, power, family, morality, existential questions.
+  - Acting style: naturalistic, restrained, broad, theatrical, ensemble casts.
+
+- State what you dislike (and why)
+  - Include specific turns you want to avoid (e.g., formulaic rom-coms, heavy-handed voiceovers, gratuitous violence, cross-cutting montages).
+  - Mention content boundaries (violence level, sexual content, political themes).
+
+- Use a simple reference framework
+  - Favorite titles (3–6) and why they resonated with you.
+  - Least favorite titles (3–6) and what turned you off.
+  - A short sentence for each that captures the key vibe you’re after and the feeling you want from a good recommendation.
+
+- Provide a rating rubric
+  - State how you rate films (e.g., 1–5 stars) and what would push a film up a rating (e.g., standout performances, originality, emotional impact, aesthetics, cohesion).
+
+- Create a quick “taste map” prompt you can share with services
+  - Example prompt: “I love intimate, character-driven dramas with naturalistic dialogue and painterly visuals. I enjoy morally complex stories with bittersweet or ambiguous endings. I’m not into loud action, formulaic plots, or heavy dose of slapstick humor. Open to foreign films with subtitles. Favorite references: [Title A], [Title B], [Title C]. Dislikes: [Title X], [Title Y].”
+
+- A practical fill-in template you can reuse
+  - Top 5 favorite films and why (brief sentences)
+  - Top 5 least favorite films and why (brief sentences)
+  - Genres/subgenres I’m drawn to
+  - Preferred tone and pacing
+  - Visual/aural preferences (cinematography, score, production design)
+  - Language preferences (subtitles vs. dubbed)
+  - Content boundaries (violence, sex, politics)
+  - Directors you admire or want to explore
+  - A sample “ideal night” description (what you want to feel, length, and mood)
+
+- How to test and refine
+  - After getting recommendations, note which elements matched or missed your taste.
+  - Update your profile after watching a few suggested films: add new favorite titles, adjust dislikes, and tweak tone/pacing notes.
+
+- Want help building your taste profile?
+  - If you want, tell me a few favorites, a couple you didn’t enjoy, and any hard boundaries. I can draft a personalized taste profile and generate a starter list of recommendations tuned to your description.",tool-routing-eval-G09-acc564ca-388b-473e-b13f-a8446f35ad5d
+V10,37,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Search a movie by plot: A biography of artist Frida Kahlo, who channeled the pain of a crippling injury and her tempestuous marriage into her work.",Frida,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""A biography of artist Frida Kahlo, who channeled the pain of a crippling injury and her tempestuous marriage into her work.\""}""]",34.288,,"Frida (2002) — a biographical drama about Frida Kahlo, directed by Julie Taymor and starring Salma Hayek.",tool-routing-eval-V10-44fb2f7f-b78c-4a88-ae0a-7a5e35924588
+C10,38,cypher,Movie information (Graph),Movie information (Graph),True,"Which actors starred in Stepford Wives, The?","Stepford Wives, The","[""Movie information (Graph)"", ""Movie information (Graph)"", ""Movie information (Graph)""]","[""{\""title\"": \""The Stepford Wives\"", \""return_fields\"": [\""cast\""]}"", ""{\""title\"": \""The Stepford Wives\"", \""return_fields\"": [\""cast\""]}"", ""{\""title\"": \""The Stepford Wives\"", \""return_fields\"": [\""cast\"", \""director\"", \""year\"", \""genres\""]}""]",109.7979,,"- 1975 film: Katharine Ross as Joanna Eberhart; Nanette Newman as Carol Van Sant; Peter Masterson as Walter Eberhart; Paula Prentiss as Bobbie Markowe
+- 2004 film: Bette Midler as Bobbie Markowitz; Glenn Close as Claire Wellington; Matthew Broderick as Walter Kresby; Nicole Kidman as Joanna Eberhart",tool-routing-eval-C10-7d22ad72-e5af-4c75-a57d-032b39c6aaaf
+C02,39,cypher,Movie information (Graph),Movie information (Graph),True,What year was Ragtime released?,Ragtime,"[""Movie information (Graph)""]","[""{\""title\"": \""Ragtime\"", \""type\"": \""film\""}""]",35.4627,,Ragtime was released in 1981.,tool-routing-eval-C02-cfceab4a-ae89-4b98-b932-f36f036ad8ef
+V01,40,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,I'm looking for a movie with a story like this: Shy seventh-grader Spencer Griffith's life changes when a meteor falls into a local junkyard and he finds a Cybersuit - an exoskeleton with AI from another galaxy.,Star Kid,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""Shy seventh-grader Spencer Griffith's life changes when a meteor falls into a local junkyard and he finds a Cybersuit - an exoskeleton with AI from another galaxy.\""}""]",30.4215,,"You're describing Star Kid (1997). It's directed by Manny Coto. The shy seventh-grader Spencer Griffith (played by Joseph Mazzello) experiences a life-changing turn when a meteor crashes in a junkyard and he discovers a Cybersuit, an alien AI-powered exoskeleton. The Cybersuit is portrayed by Alex Daniels. Other cast members include Corinne Bohrer as Janet Holloway and Richard Gilliland as Roland Griffith. The film blends coming-of-age drama with sci-fi adventure, focusing on how the discovery transforms Spencer’s world. If you’d like, I can share more details like runtime, production notes, or where to stream.",tool-routing-eval-V01-a3356910-53c4-463f-b9ee-197fd82ae56b
+G05,41,general,General Chat,General Chat,True,How should I choose a movie when I only know my mood?,,[],[],17.478,,"Here’s a practical way to pick a movie based on mood, plus quick mood-to-genre mappings and a simple decision flow you can use anytime.
+
+1) Quick mood-to-genre map
+- Cozy and comfort-seeking: feel-good comedy, light drama, slice-of-life, animated family films
+- Calm and relaxed: gentle romance, soft drama, uplifting true-story vibes
+- Energized and pumped: action, adventure, high-octane thriller, sports drama
+- Curious and thoughtful: mysteries, psychological dramas, mind-bending sci-fi, literary dramas
+- Nostalgic or sentimental: period dramas, retro comedies, family-friendly classics
+- Laugh-out-loud: buddy comedies, witty romantic comedies, satirical humor
+- Anxious or tense: suspense/thriller, crime drama, dark mystery
+- Awe-and-wonder: fantasy, epic sci-fi, adventure epics
+- Romantic or feel-good romance: romance films, rom-coms, tender dramas
+- Spooky or spooky-light: horror (creepy but not extreme), supernatural mystery, gothic romance
+
+2) Consider the basics before you browse
+- Energy level: Do you want something soothing or something adrenaline-packed?
+- Length: Do you have time for a 90–120 minute ride or a longer film?
+- Setting: Do you prefer contemporary vibes, period pieces, or fantastical worlds?
+- Content boundaries: Any topics you want to avoid (violence, romance, language, etc.)?
+- Company: Are you watching solo or with others? Aim for something broadly appealing if with others.
+
+3) A simple decision flow (one-minute filter)
+- Step 1: Pick mood category (e.g., cozy, tense, funny, thought-provoking, romantic, epic).
+- Step 2: Choose a tone within that mood (light, heartfelt, witty, dark, eerie, grand).
+- Step 3: Select runtime and intensity (short and light vs. longer and more intense).
+- Step 4: Narrow by genre pairings you like. Example mappings below.
+- Step 5: Scan two to three quick synopses or trailers to confirm vibe, then pick.
+
+4) Quick pairings you can use right away
+- Cozy + light + short: warm comedy, gentle slice-of-life
+- Cozy + heartfelt: uplifting drama or romantic comedy
+- Energized + thrilling: action-adventure, spy-thriller
+- Curious + mind-bending: mystery with twists, sci-fi heady concepts
+- Nostalgic + comforting: period piece, classic-inspired drama or family film
+- Laughing + witty: smart rom-com or buddy comedy
+- Awe + wonder: fantasy epic or high-concept sci-fi
+- Suspense + grit: crime thriller or psychological thriller
+- Romantic + feel-good: contemporary romance or tender drama
+
+5) Quick browsing tips
+- Use a “mood filter” on your streaming service if available (e.g., tags like uplifting, thrilling, funny, dark).
+- If you’re overwhelmed, pick a subgenre first (e.g., “I want a sci-fi fantasy with adventure”) and then a specific vibe within it.
+- Read a 1–2 sentence synopsis and watch a 30–60 second trailer or clip to confirm the mood.
+- If watching with others, aim for a universally agreeable option or have two backups in different vibes.
+
+6) A tiny troubleshooting kit
+- If you’re not in the mood for anything heavy, avoid long, dense dramas or grim thrillers; pick something light and engaging.
+- If you want something the mind can chew on later, choose a film with a strong premise or twist.
+- If you’re tired, pick something comforting and not too loud or graphic.
+- If you want to feel inspired, seek uplifting dramas or adventure films with hopeful endings.
+
+If you tell me your current mood category (e.g., “I want something cozy and funny” or “I want a tense, thought-provoking thriller”) and a rough runtime you prefer, I can give you a short, tailored list of options that should match right away.",tool-routing-eval-G05-ae2a1f4d-af62-49d9-b034-02975b4aa8b8
+C18,42,cypher,Movie information (Graph),Movie information (Graph),True,Show the genres for Making Mr. Right.,Making Mr. Right,"[""Movie information (Graph)"", ""Movie information (Graph)""]","[""{\""title\"": \""Making Mr. Right\""}"", ""{\""title\"": \""Making Mr. Right\"", \""fields\"": [\""genres\""]}""]",61.6014,,"The genres for Making Mr. Right are Sci-Fi, Romance, and Comedy.",tool-routing-eval-C18-3f987630-9671-4108-a017-674b7f66965e
+V11,43,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"I'm looking for a movie with a story like this: An actor limited to stereotypical roles because of his ethnicity, dreams of making it big as a highly respected performer.",Hollywood Shuffle,"[""Movie Plot Search (Vector)""]","[""{\""plot\"": \""An actor limited to stereotypical roles because of his ethnicity, dreams of making it big as a highly respected performer.\""}""]",29.9386,,"Based on your plot description, the best match is Hollywood Shuffle (1987) directed by Robert Townsend. It satirically examines the experience of an African American actor who is limited to stereotype-driven roles in Hollywood while he dreams of being a highly respected performer. The tool’s results identify Hollywood Shuffle as the film with that exact premise and describe it as a satirical look at African American actors in Hollywood. If you want more details about the cast, themes, or how it compares to other films with similar plots, I can provide them. If this isn’t the film you had in mind, share any extra clues (year, actors, specific scenes) and I’ll narrow it further.",tool-routing-eval-V11-be9b85e6-229d-4b70-ab73-3ae8d9902d55
+V09,44,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Help me find the movie based on this storyline: Shenzhen businessman, Da Ming, goes home to Beijing when he thinks his father has died.",Shower (Xizao),"[""Movie Plot Search (Vector)"", ""_Exception""]","[""{\""plot\"": \""Shenzhen businessman, Da Ming, goes home to Beijing when he thinks his father has died.\""}"", ""Invalid Format: Missing 'Action:' after 'Thought:'""]",52.0653,,"Shower (Xizao) — a film directed by Zhang Yang. The plot you described—Da Ming, a Shenzhen businessman, returns to Beijing after thinking his father has died and finds him alive, working at the family bathhouse; the death notice was a ruse—matches this movie. Notable cast includes Jiang Wu, He Bing, He Zeng, Er Ming, and Quanxin Pu. TMDB lists it as Shower (Xizao) with the tmdbId 1050.",tool-routing-eval-V09-00a6c42e-c130-4480-b257-91a6a26b73d1
+V17,45,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,Find a film based on this plot idea: Historically inaccurate chronicle of Squanto's life prior to and including the arrival of the Mayflower in 1620.,Squanto: A Warrior's Tale,"[""Movie Plot Search (Vector)""]","[""{\""plotIdea\"": \""Historically inaccurate chronicle of Squanto's life prior to and including the arrival of the Mayflower in 1620.\""}""]",49.3982,,"The film that best matches your plot idea is Squanto: A Warrior's Tale (1994). 
+- Director: Xavier Koller
+- Main cast: Eric Schweig as Epenow, Irene Bedard as Nakooma, Sheldon Peters Wolfchild as Mooshawset, Adam Beach as Squanto
+- TMDB entry: 65158 (https://www.themoviedb.org/movie/65158)
+- Notes: This title appears in the search results as a Squanto-focused film from around the period of early 17th-century contact with English settlers, aligning with your timeframe up to the Mayflower arrival. If you’d like, I can pull more details (runtime, genres, or a synopsis) from the TMDB page.",tool-routing-eval-V17-80486863-7a1e-475c-a598-e969d6c4a08c
+C16,46,cypher,Movie information (Graph),Movie information (Graph),True,List the cast of Blood Beach.,Blood Beach,"[""Movie information (Graph)""]","[""{\""title\"": \""Blood Beach\"", \""year\"": 1980, \""fields\"": [\""cast\""]}""]",32.899,,Otis Young as Lieutenant Piantadosi; Burt Young as Sergeant Royko; Marianna Hill as Catherine Hutton; David Huffman as Harry Caulder,tool-routing-eval-C16-3dc53c12-0502-4f54-9330-dbc03db6d7a5
+V18,47,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Which movie matches these plot elements: scholarship, attending, pampered, achieve, harvard, receive?",Soul Man,"[""Movie Plot Search (Vector)""]","[""{\""plot_description\"": \""Elements include scholarship to attend Harvard, pampered upbringing, striving to achieve, seeking recognition/receive.\""}""]",25.8599,,"Soul Man (1986) — The plot features a pampered teen who poses as a young Black man to receive a full scholarship to Harvard, aligning with the elements of scholarship to attend Harvard, pampered upbringing, and striving to achieve/receive recognition.",tool-routing-eval-V18-ed324306-290f-4e62-b6f9-42e903b3fca5
+C08,48,cypher,Movie information (Graph),_Exception,False,Show the genres for Jeepers Creepers.,Jeepers Creepers,"[""_Exception"", ""Movie information (Graph)""]","[""Invalid Format: Missing 'Action:' after 'Thought:'"", ""{\""title\"": \""Jeepers Creepers\"", \""attribute\"": \""genres\""}""]",31.1273,,Horror,tool-routing-eval-C08-19ac4dfb-ba20-4e43-a716-df7be81a844f
+V03,49,vector,Movie Plot Search (Vector),Movie Plot Search (Vector),True,"Which movie matches these plot elements: meanwhile, narrated, romantic, married, newborn, through?",Look Who's Talking,"[""Movie Plot Search (Vector)""]","[""{\""plot_elements\"": [\""meanwhile\"", \""narrated\"", \""romantic\"", \""married\"", \""newborn\"", \""through\""]}""]",28.6822,,"No exact film shown matches all six elements (meanwhile, narrated, romantic, married, newborn, through). The closest fit among the described plots is Enemies: A Love Story (1989), which involves romance and a married dynamic (a ghostwriter entangled with his current wife and his vanished wife). Other options from the results include Dedication (romantic/author-centered), Ruby Sparks (romance with a fictional creation), and Everyone Else (Alle Anderen) (vacation romance), but none incorporate all six keywords, especially newborn and through. If you’d like, I can outline a new plot that weaves all six elements together.",tool-routing-eval-V03-ecfb9abc-30da-4043-8944-0973a6db3f69
+C05,50,cypher,Movie information (Graph),_Exception,False,"Give me basic information about Slaughter Rule, The (director, year, genres).","Slaughter Rule, The","[""General Chat"", ""Movie information (Graph)""]","[""{\""title\"": \""The Slaughter Rule\""}"", ""{\""title\"": \""The Slaughter Rule\""}""]",56.2447,"CypherSyntaxError('Invalid input \'query\': expected \'ALTER\', \'ORDER BY\', \'CALL\', \'USING PERIODIC COMMIT\', \'CREATE\', \'LOAD CSV\', \'START DATABASE\', \'STOP DATABASE\', \'DEALLOCATE\', \'DELETE\', \'DENY\', \'DETACH\', \'DROP\', \'DRYRUN\', \'FINISH\', \'FOREACH\', \'GRANT\', \'INSERT\', \'LIMIT\', \'MATCH\', \'MERGE\', \'NODETACH\', \'OFFSET\', \'OPTIONAL\', \'REALLOCATE\', \'REMOVE\', \'RENAME\', \'RETURN\', \'REVOKE\', \'ENABLE SERVER\', \'SET\', \'SHOW\', \'SKIP\', \'TERMINATE\', \'UNWIND\', \'USE\' or \'WITH\' (line 1, column 8 (offset: 7))\n""Cypher query to find people who acted in or directed the movie titled ""The Slaughter Rule"" (title formatted as ""Slaughter Rule, The"" in output):""\n        ^')",,tool-routing-eval-C05-274a41d9-7aca-4c1d-8da7-be0e153aa62e

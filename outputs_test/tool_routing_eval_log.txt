@@ -1,0 +1,52 @@
+Starting Tool Routing Evaluation...
+Questions file: data/tool_routing_questions.json
+Logging to: outputs_test/tool_routing_eval_log.txt
+
+==========================================================================================
+Running query 1/1 | qid=C20 | expected=Movie information (Graph) | category=cypher
+Question: Which actors starred in Bill & Ted's Excellent Adventure?
+Predicted tool: Movie information (Graph)
+Tools called: ['Movie information (Graph)']
+Runtime: 39.9759 sec
+Final answer:
+- Alex Winter as Bill S. Preston, 
+- Keanu Reeves as Ted Logan, 
+- George Carlin as Rufus, 
+- Terry Camilleri as Napoleon
+
+==============================
+Tool Routing Evaluation Result
+==============================
+Results CSV:  outputs_test/tool_routing_eval_results.csv
+Summary JSON: outputs_test/tool_routing_eval_summary.json
+
+{
+  "total": 1,
+  "overall_accuracy": 1.0,
+  "per_category": {
+    "cypher": {
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    }
+  },
+  "per_expected_tool": {
+    "Movie information (Graph)": {
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    }
+  },
+  "confusion": {
+    "Movie information (Graph)": {
+      "Movie information (Graph)": 1
+    }
+  },
+  "exception_rate": 0.0,
+  "avg_runtime_sec": 39.9759
+}
+
+Confusion (counts):
+predicted_tool             Movie information (Graph)
+expected_tool                                       
+Movie information (Graph)                          1

@@ -1,0 +1,62 @@
+{
+  "total": 50,
+  "overall_accuracy": 0.82,
+  "per_category": {
+    "cypher": {
+      "n": 20,
+      "correct": 11,
+      "accuracy": 0.55
+    },
+    "general": {
+      "n": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "vector": {
+      "n": 20,
+      "correct": 20,
+      "accuracy": 1.0
+    }
+  },
+  "per_expected_tool": {
+    "General Chat": {
+      "n": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "Movie Plot Search (Vector)": {
+      "n": 20,
+      "correct": 20,
+      "accuracy": 1.0
+    },
+    "Movie information (Graph)": {
+      "n": 20,
+      "correct": 11,
+      "accuracy": 0.55
+    }
+  },
+  "confusion": {
+    "General Chat": {
+      "General Chat": 10,
+      "Movie Plot Search (Vector)": 0,
+      "Movie information (Graph)": 2
+    },
+    "Movie Plot Search (Vector)": {
+      "General Chat": 0,
+      "Movie Plot Search (Vector)": 20,
+      "Movie information (Graph)": 0
+    },
+    "Movie information (Graph)": {
+      "General Chat": 0,
+      "Movie Plot Search (Vector)": 0,
+      "Movie information (Graph)": 11
+    },
+    "_Exception": {
+      "General Chat": 0,
+      "Movie Plot Search (Vector)": 0,
+      "Movie information (Graph)": 7
+    }
+  },
+  "exception_rate": 0.14,
+  "avg_runtime_sec": 40.0026
+}

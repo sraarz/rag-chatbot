@@ -1,0 +1,25 @@
+{
+  "total": 1,
+  "overall_accuracy": 1.0,
+  "per_category": {
+    "cypher": {
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    }
+  },
+  "per_expected_tool": {
+    "Movie information (Graph)": {
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    }
+  },
+  "confusion": {
+    "Movie information (Graph)": {
+      "Movie information (Graph)": 1
+    }
+  },
+  "exception_rate": 0.0,
+  "avg_runtime_sec": 39.9759
+}
